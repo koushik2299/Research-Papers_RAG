@@ -1,5 +1,4 @@
 # Research Paper Analysis 🐼
-
 ## Overview
 
 This project is designed to analyze research papers using advanced language models and vector embedding techniques. The main objective is to provide users with the ability to query a set of research papers and receive accurate, context-based responses.
@@ -25,35 +24,35 @@ This project is designed to analyze research papers using advanced language mode
 ## Installation
 
 1. **Clone the repository**:
-    \`\`\`bash
+    ```bash
     git clone https://github.com/yourusername/research-paper-analysis.git
     cd research-paper-analysis
-    \`\`\`
+    ```
 
 2. **Create and activate a virtual environment**:
-    \`\`\`bash
+    ```bash
     python3 -m venv env
-    source env/bin/activate  # On Windows, use \`env\\Scripts\\activate\`
-    \`\`\`
+    source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    ```
 
 3. **Install the required dependencies**:
-    \`\`\`bash
+    ```bash
     pip install -r requirements.txt
-    \`\`\`
+    ```
 
 4. **Set up environment variables**:
-    - Create a \`.env\` file in the project directory and add your API keys:
-    \`\`\`env
+    - Create a `.env` file in the project directory and add your API keys:
+    ```env
     OPENAI_API_KEY=your_openai_api_key
     GROQ_API_KEY=your_groq_api_key
-    \`\`\`
+    ```
 
 ## Usage
 
 1. **Run the Streamlit app**:
-    \`\`\`bash
+    ```bash
     streamlit run app.py
-    \`\`\`
+    ```
 
 2. **Interact with the app**:
     - Upload research papers to the specified directory.
@@ -63,10 +62,10 @@ This project is designed to analyze research papers using advanced language mode
 
 ### Vector Embedding and ObjectBox Vectorstore DB
 
-1. **Data Ingestion**: Load research papers using \`PyPDFDirectoryLoader\`.
-2. **Text Splitting**: Split documents into manageable chunks using \`RecursiveCharacterTextSplitter\`.
-3. **Vector Embedding**: Embed the document chunks using \`OpenAIEmbeddings\`.
-4. **Vector Storage**: Store the embeddings in an \`ObjectBox\` vector store for efficient retrieval.
+1. **Data Ingestion**: Load research papers using `PyPDFDirectoryLoader`.
+2. **Text Splitting**: Split documents into manageable chunks using `RecursiveCharacterTextSplitter`.
+3. **Vector Embedding**: Embed the document chunks using `OpenAIEmbeddings`.
+4. **Vector Storage**: Store the embeddings in an `ObjectBox` vector store for efficient retrieval.
 
 ### Query and Retrieval
 
@@ -80,8 +79,8 @@ This project is designed to analyze research papers using advanced language mode
 
 ## Screenshots
 
-![Screenshot of App](objectbox\screenshot1.png)
-![Screenshot of App](objectbox\screenshot2.png)
+![Screenshot of App](screenshot1.png)
+![Screenshot of App](screenshot2.png)
 
 ## Project Information
 
